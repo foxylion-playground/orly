@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>O rly?</title>
+    <script type="text/javascript">
+        function randomCover() {
+            var rand = Math.floor(Math.random() * 247) + 1;
+            var randStr = "" + rand;
+            var pad = "000";
+            randStr = pad.substring(0, pad.length - randStr.length) + randStr;
+            document.getElementById("cover").src = "images/" + randStr + ".png";
+        }
+        window.onload = function () {
+            randomCover();
+            document.getElementById('cover').onclick = randomCover;
+            window.setInterval(randomCover, 10000);
+        };
+    </script>
+</head>
+
+<body style="text-align:center;height:100%;">
+    <h1>Today's recommended book</h1>
+    <hr>
+    <img id="cover" alt="book cover" style="max-height:700px">
+</body>
+
+</html>
