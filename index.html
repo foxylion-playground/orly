@@ -14,13 +14,15 @@
         window.onload = function () {
             randomCover();
             document.getElementById('cover').onclick = randomCover;
-            window.setInterval(randomCover, 10000);
+            window.setInterval(randomCover, 60 * 60 * 1000);
         };
     </script>
 </head>
 
 <body style="text-align:center;height:100%;">
-    <h1>Today's recommended book</h1>
+    <h1 style="font-weight: normal;">
+        <script>document.write("H<b>o</b>u<b>rly</b>'s recommended book");</script>
+    </h1>
     <hr>
     <br>
     <img id="cover" alt="book cover" style="max-height:700px;border: 1px solid #999">
