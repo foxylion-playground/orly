@@ -5,7 +5,7 @@
     <title>O rly?</title>
     <script type="text/javascript">
         function randomCover() {
-            var rand = Math.floor(Math.random() * 247) + 1;
+            var rand = Math.floor(Math.random() * 226) + 1;
             var randStr = "" + rand;
             var pad = "000";
             randStr = pad.substring(0, pad.length - randStr.length) + randStr;
@@ -19,13 +19,13 @@
     </script>
 </head>
 
-<body style="text-align:center;height:100%;">
+<body style="text-align:center;text-align:center;top:0;bottom:0;left:0;right:0;position:absolute;">
     <h1 style="font-weight: normal;">
         <script>document.write("H<b>o</b>u<b>rly</b>'s recommended book");</script>
     </h1>
     <hr>
     <br>
-    <img id="cover" alt="book cover" style="max-height:700px;border: 1px solid #999">
+    <img id="cover" alt="book cover" style="max-height:calc(100% - 150px);border: 1px solid #999">
 </body>
 
 </html>
